@@ -10,10 +10,9 @@ jobs:
   build-and-test:
     runs-on: ${{matrix.os}}
     strategy:
-       matrix:
-    os:[ubuntu-latest,windows-latest]
-    node-versions: [18, 19, 20]
-
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node-versions: [ 18, 19, 20]
 
     steps:
       - name: Checkout repository
